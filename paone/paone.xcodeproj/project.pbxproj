@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B607B08B6CEAC09EA2232E97 /* Pods_paone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFCEA5B44E9E13D55EEAB03 /* Pods_paone.framework */; };
+		C803A96E26E97DE400B7A585 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803A96D26E97DE400B7A585 /* MemoryGame.swift */; };
+		C803A97026E97E0100B7A585 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803A96F26E97E0100B7A585 /* EmojiMemoryGame.swift */; };
 		C88E13D026E975E800D622AF /* paoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88E13CF26E975E800D622AF /* paoneApp.swift */; };
 		C88E13D226E975E800D622AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88E13D126E975E800D622AF /* ContentView.swift */; };
 		C88E13D426E975EB00D622AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88E13D326E975EB00D622AF /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		8EFCEA5B44E9E13D55EEAB03 /* Pods_paone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8893AC2ED3EEED1CB26D5D /* Pods-paone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paone.debug.xcconfig"; path = "Target Support Files/Pods-paone/Pods-paone.debug.xcconfig"; sourceTree = "<group>"; };
+		C803A96D26E97DE400B7A585 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		C803A96F26E97E0100B7A585 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		C88E13CC26E975E800D622AF /* paone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88E13CF26E975E800D622AF /* paoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paoneApp.swift; sourceTree = "<group>"; };
 		C88E13D126E975E800D622AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,7 +50,6 @@
 				9B8893AC2ED3EEED1CB26D5D /* Pods-paone.debug.xcconfig */,
 				EF60B1F3005BD7F663D4E390 /* Pods-paone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +85,8 @@
 				C88E13CF26E975E800D622AF /* paoneApp.swift */,
 				D626CD0E26E97A1300F43205 /* GoogleService-Info.plist */,
 				C88E13D126E975E800D622AF /* ContentView.swift */,
+				C803A96D26E97DE400B7A585 /* MemoryGame.swift */,
+				C803A96F26E97E0100B7A585 /* EmojiMemoryGame.swift */,
 				C88E13D326E975EB00D622AF /* Assets.xcassets */,
 				C88E13D826E975EB00D622AF /* Info.plist */,
 				C88E13D526E975EB00D622AF /* Preview Content */,
@@ -211,8 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C803A96E26E97DE400B7A585 /* MemoryGame.swift in Sources */,
 				C88E13D226E975E800D622AF /* ContentView.swift in Sources */,
 				C88E13D026E975E800D622AF /* paoneApp.swift in Sources */,
+				C803A97026E97E0100B7A585 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

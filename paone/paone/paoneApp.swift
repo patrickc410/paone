@@ -10,13 +10,15 @@ import Firebase
 
 @main
 struct paoneApp: App {
+    let game = EmojiMemoryGame()
+    
     init() {
-            FirebaseApp.configure()
-        }
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: game)
         }
     }
 }
