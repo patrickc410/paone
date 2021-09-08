@@ -1,0 +1,6 @@
+framework module Pods_paone {
+  umbrella header "Pods-paone-umbrella.h"
+
+  export *
+  module * { export * }
+}
