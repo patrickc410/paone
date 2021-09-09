@@ -8,24 +8,26 @@
 import Foundation
 
 class EmojiMemoryGame: ObservableObject {
-    static let emojis = ["🤪", "🤝", "😟", "🦔", "👁", "🧵", "🪱", "🌝", "🥌", "🆒", "〰️", "⬛️", "🧶", "🔫", "🚮", "☞", "☃︎", "a", "b", "c", "d" , "e", "f", "g"]
+    typealias Card = MemoryGame<String>.Card
     
-    static func createMemoryGame() -> MemoryGame<String> {
+    private static let emojis = ["🤪", "🤝", "😟", "🦔", "👁", "🧵", "🪱", "🌝", "🥌", "🆒", "〰️", "⬛️", "🧶", "🔫", "🚮", "☞", "☃︎", "a", "b", "c", "d" , "e", "f", "g"]
+    
+    private static func createMemoryGame() -> MemoryGame<String> {
         MemoryGame<String>(numberOfPairsOfCards: 4) { pairIndex in
             return emojis[pairIndex]
         }
     }
     
-    @Published private var model: MemoryGame<String> = createMemoryGame()
+    @Published private var model = createMemoryGame()
     
-    var cards: Array<MemoryGame<String>.Card> {
+    var cards: Array<Card> {
         return model.cards
     }
     
     
     // MARK: -- INTENTS
     
-    func choose(_ card: MemoryGame<String>.Card) {
+    func choose(_ card: Card) {
 //        objectWillChange.send()
         model.choose(card)
     }
