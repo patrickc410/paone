@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B607B08B6CEAC09EA2232E97 /* Pods_paone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFCEA5B44E9E13D55EEAB03 /* Pods_paone.framework */; };
 		C803A96E26E97DE400B7A585 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803A96D26E97DE400B7A585 /* MemoryGame.swift */; };
 		C803A97026E97E0100B7A585 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C803A96F26E97E0100B7A585 /* EmojiMemoryGame.swift */; };
 		C88E13D026E975E800D622AF /* paoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88E13CF26E975E800D622AF /* paoneApp.swift */; };
@@ -15,11 +14,13 @@
 		C88E13D426E975EB00D622AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88E13D326E975EB00D622AF /* Assets.xcassets */; };
 		C88E13D726E975EB00D622AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88E13D626E975EB00D622AF /* Preview Assets.xcassets */; };
 		D626CD0F26E97A1300F43205 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D626CD0E26E97A1300F43205 /* GoogleService-Info.plist */; };
+		E687CE60CF6F75DEB7327442 /* Pods_paone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D91CFA3E3E876932A69FAAB /* Pods_paone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8EFCEA5B44E9E13D55EEAB03 /* Pods_paone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B8893AC2ED3EEED1CB26D5D /* Pods-paone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paone.debug.xcconfig"; path = "Target Support Files/Pods-paone/Pods-paone.debug.xcconfig"; sourceTree = "<group>"; };
+		1B7AEFA9BA3387BB21E83D9D /* Pods-paone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paone.debug.xcconfig"; path = "Target Support Files/Pods-paone/Pods-paone.debug.xcconfig"; sourceTree = "<group>"; };
+		7D91CFA3E3E876932A69FAAB /* Pods_paone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_paone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B17B457B7870BDA8529A1B12 /* Pods-paone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paone.release.xcconfig"; path = "Target Support Files/Pods-paone/Pods-paone.release.xcconfig"; sourceTree = "<group>"; };
 		C803A96D26E97DE400B7A585 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		C803A96F26E97E0100B7A585 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		C88E13CC26E975E800D622AF /* paone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,7 +30,6 @@
 		C88E13D626E975EB00D622AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C88E13D826E975EB00D622AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D626CD0E26E97A1300F43205 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EF60B1F3005BD7F663D4E390 /* Pods-paone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paone.release.xcconfig"; path = "Target Support Files/Pods-paone/Pods-paone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B607B08B6CEAC09EA2232E97 /* Pods_paone.framework in Frameworks */,
+				E687CE60CF6F75DEB7327442 /* Pods_paone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,16 +47,16 @@
 		5F02076C0027FBF5724AB37A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B8893AC2ED3EEED1CB26D5D /* Pods-paone.debug.xcconfig */,
-				EF60B1F3005BD7F663D4E390 /* Pods-paone.release.xcconfig */,
+				1B7AEFA9BA3387BB21E83D9D /* Pods-paone.debug.xcconfig */,
+				B17B457B7870BDA8529A1B12 /* Pods-paone.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		699AE0F47104FEC630A216D0 /* Frameworks */ = {
+		6152041AF3E1EFA949AF3A98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8EFCEA5B44E9E13D55EEAB03 /* Pods_paone.framework */,
+				7D91CFA3E3E876932A69FAAB /* Pods_paone.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -67,7 +67,7 @@
 				C88E13CE26E975E800D622AF /* paone */,
 				C88E13CD26E975E800D622AF /* Products */,
 				5F02076C0027FBF5724AB37A /* Pods */,
-				699AE0F47104FEC630A216D0 /* Frameworks */,
+				6152041AF3E1EFA949AF3A98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,11 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C88E13DB26E975EB00D622AF /* Build configuration list for PBXNativeTarget "paone" */;
 			buildPhases = (
-				0DAD4761EDC8F9064F9CB3DD /* [CP] Check Pods Manifest.lock */,
+				EDDD2122719E43FE63A3DD66 /* [CP] Check Pods Manifest.lock */,
 				C88E13C826E975E800D622AF /* Sources */,
 				C88E13C926E975E800D622AF /* Frameworks */,
 				C88E13CA26E975E800D622AF /* Resources */,
-				F995CDEA3D07B2C283077D97 /* [CP] Embed Pods Frameworks */,
+				23E9D4BC6A2323C6CC949C62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,7 +170,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DAD4761EDC8F9064F9CB3DD /* [CP] Check Pods Manifest.lock */ = {
+		23E9D4BC6A2323C6CC949C62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-paone/Pods-paone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-paone/Pods-paone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-paone/Pods-paone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDDD2122719E43FE63A3DD66 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -190,23 +207,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F995CDEA3D07B2C283077D97 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-paone/Pods-paone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-paone/Pods-paone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-paone/Pods-paone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -344,7 +344,7 @@
 		};
 		C88E13DC26E975EB00D622AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B8893AC2ED3EEED1CB26D5D /* Pods-paone.debug.xcconfig */;
+			baseConfigurationReference = 1B7AEFA9BA3387BB21E83D9D /* Pods-paone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,7 +367,7 @@
 		};
 		C88E13DD26E975EB00D622AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF60B1F3005BD7F663D4E390 /* Pods-paone.release.xcconfig */;
+			baseConfigurationReference = B17B457B7870BDA8529A1B12 /* Pods-paone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

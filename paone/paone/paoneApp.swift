@@ -10,15 +10,31 @@ import Firebase
 
 @main
 struct paoneApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     private let game = EmojiMemoryGame()
     
-    init() {
-        FirebaseApp.configure()
-    }
+//    init() {
+//        FirebaseApp.configure()
+//    }
     
     var body: some Scene {
         WindowGroup {
-            EmojiMemoryGameView(game: game)
+            let viewModel = AppViewModel()
+            ContentView()
+                .environmentObject(viewModel)
+            //EmojiMemoryGameView(game: game)
         }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
+                        [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        FirebaseApp.configure()
+        
+        return true
     }
 }
