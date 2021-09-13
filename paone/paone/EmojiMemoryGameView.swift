@@ -74,10 +74,9 @@ struct ContentView: View {
                             .padding()
                     })
                 }
-                } else {
-                    SignInView()
-               
-                }
+            } else {
+                SignInView()
+            }
         }
         .onAppear{
             viewModel.signedIn = viewModel.isSignedIn
@@ -192,25 +191,30 @@ struct EmojiMemoryGameView: View {
     @ObservedObject var game: EmojiMemoryGame
     
     var body: some View {
-        VStack{
-            HStack {
-                Text("Your Score:").padding()
-                Text(String(game.get_score()))
-                Spacer()
-                Text("High Score:")
-                Text(String("2")).padding()
-                
+        if game.get_score() == 4 {
+            YouWinView()
+        } else {
+            VStack{
+                HStack {
+                    Text("Your Score:").padding()
+                    Text(String(game.get_score()))
+                    Spacer()
+                    Text("High Score:")
+                    Text(String("2")).padding()
+                    
+                }
+                AspectVGrid(items: game.cards, aspectRatio: 2/3) { card in
+                    CardView(card: card)
+                        .padding(4)
+                        .onTapGesture {
+                            game.choose(card)
+                        }
+                }
+                .foregroundColor(.red)
+                .padding()
             }
-            AspectVGrid(items: game.cards, aspectRatio: 2/3) { card in
-                CardView(card: card)
-                    .padding(4)
-                    .onTapGesture {
-                        game.choose(card)
-                    }
-            }
-            .foregroundColor(.red)
-            .padding()
         }
+        
         
     }
     
@@ -257,6 +261,17 @@ struct CardView: View {
         static let cornerRadius: CGFloat = 10
         static let lineWidth: CGFloat = 3
         static let fontScale: CGFloat = 0.7
+    }
+}
+
+
+
+
+struct YouWinView: View {
+
+    var body: some View {
+        Text("You WIN!!")
+//        Text("Your Score: ")
     }
 }
 
