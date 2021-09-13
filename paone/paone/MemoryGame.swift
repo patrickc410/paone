@@ -14,38 +14,31 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
     
     private var indexOfFaceUpCard: Int? {
         get {
-            var faceUpCardIndices = cards.indices.filter({cards[$0].isFaceUp})
-//            var faceUpCardIndices = [Int]()
-            for index in cards.indices {
-                if cards[index].isFaceUp {
-                    faceUpCardIndices.append(index)
-                }
-            }
-            if faceUpCardIndices.count == 1 {
-                return faceUpCardIndices.first
-            } else {
-                return nil
-            }
+            return cards.indices.filter({cards[$0].isFaceUp}).oneAndOnly
         }
         set {
-            for index in cards.indices {
-                if index != newValue {
-                    cards[index].isFaceUp = false
-                } else {
-                    cards[index].isFaceUp = true
-                }
-                
-            }
+            cards.indices.forEach {cards[$0].isFaceUp = ($0 == newValue) }
         }
-        
     }
+    var score: Int {
+        get {
+            var count = 0
+            for index in cards.indices {
+                if cards[index].isMatched {
+                    count += 1
+                }
+            }
+            return count / 2
+            
+        }
+    }
+
+    
+    
+    
+    
     
     mutating func choose(_ card: Card) -> Void {
-//        print("model choose function called")
-//        if let chosenIndex = index(of: card) {
-//            cards[chosenIndex].isFaceUp.toggle()
-//        }
-        
         if let chosenIndex = cards.firstIndex(where: { $0.id == card.id }),
            !cards[chosenIndex].isFaceUp,
            !cards[chosenIndex].isMatched
@@ -60,20 +53,10 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
                 indexOfFaceUpCard = chosenIndex
             }
         }
-        print("cards are \(cards)")
     }
-    
-//    func index(of card: Card) -> Int? {
-//        for index in 0..<cards.count {
-//            if cards[index].id == card.id {
-//                return index
-//            }
-//        }
-//        return nil // couldn't find card
-//    }
+
     
     init(numberOfPairsOfCards: Int, createCardContent: (Int) -> CardContent) {
-//        cards = Array<Card>()
         cards = []
         // add numberOfPairsOfCards * 2 to cards array
         for pairIndex in 0..<numberOfPairsOfCards {
@@ -90,3 +73,14 @@ struct MemoryGame<CardContent> where CardContent: Equatable {
         let id: Int
     }
 }
+
+extension Array {
+    var oneAndOnly: Element? {
+        if count == 1 {
+            return first
+        } else {
+            return nil
+        }
+    }
+}
+
