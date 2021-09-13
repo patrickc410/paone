@@ -56,13 +56,14 @@ class AppViewModel: ObservableObject {
 
 struct ContentView: View {
     @EnvironmentObject var viewModel: AppViewModel
+    private let game = EmojiMemoryGame()
     
     var body: some View {
         NavigationView {
             if viewModel.signedIn {
             VStack{
-                    Text("You are signed in")
-                    
+                    //Text("You are signed in")
+                    EmojiMemoryGameView(game: game)
                     Button(action: {
                         viewModel.signOut()
                     }, label: {
