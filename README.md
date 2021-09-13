@@ -10,9 +10,14 @@ a basic log-in screen, followed by a card-matching game
 1. Ensure that you have a recent version of XCode downloaded on your Mac
 2. Clone this repository with a `git clone https://github.com/patrickc410/paone.git` command in Terminal
 4. Open XCode, then open the `paone.xcworkspace` file when prompted to open a project
+...![Open Workspace Image](https://github.com/patrickc410/paone/blob/main/images/open_workspace.png)
 5. Plug in your iOS device to your Mac
-6. Along the top ribbon of XCode, set the active scheme to paone and set the device to your iOS device. If you do not see your iOS device listed among options, ...
+6. Along the top ribbon of XCode, set the active scheme to paone and set the device to your iOS device.
+...![Set Active Scheme Image](https://github.com/patrickc410/paone/blob/main/images/set_active_scheme.png)
 7. Press the play button to "Build then run the current scheme", which will download the app to your iOS device and then lauch the app.
+8. You may be required to input your Apple ID password as a developer:
+...![Codesign Password Image](https://github.com/patrickc410/paone/blob/main/images/codesign_password.png)
+
 
 
 ## Firebase Setup
