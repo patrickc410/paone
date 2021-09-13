@@ -13,7 +13,7 @@ struct paoneApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
-    private let game = EmojiMemoryGame()
+    //private let game = EmojiMemoryGame()
     
 //    init() {
 //        FirebaseApp.configure()
