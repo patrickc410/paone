@@ -17,6 +17,7 @@ a basic log-in screen, followed by a card-matching game
 7. Press the play button to "Build then run the current scheme", which will download the app to your iOS device and then lauch the app.
 8. You may be required to input your Apple ID password as a developer:
 ...![Codesign Password Image](https://github.com/patrickc410/paone/blob/main/images/codesign_password.png)
+9. Optional: If you get an error "signing says no accounts found", you must go to paone.xcodeproj in Xcode and go to Signing and capabilties tab. There you will need to select you account. <img width="2048" alt="Screen Shot 2021-09-13 at 3 10 30 AM" src="https://user-images.githubusercontent.com/42740535/133039649-0dd73d1a-91e9-4540-bac4-fc73c2f25f4e.png">
 
 
 
